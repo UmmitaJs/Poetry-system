@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(openbook.jpg);
+   
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: rgba(9,9,77,0.9);
+    font-size: 1.3rem;
+
+}
+nav ul{
+}
+nav li{
+    margin: 13px 0;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all 160ms ease-in;
+
+}
+nav li a{
+    color: #fff;
+    width: 100%;
+    display: block;
+
+
+}
+nav li:hover{
+     cursor: pointer;
+     background-color: #09094d;
+     
+}
+.active{
+    background-color: #09094d;
+}
+.main{
+    position: fixed;
+    left: 12rem;
+    width: calc(100% - 12rem);
+    background-color: rgb(241, 238, 238);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20%;
+}
+p{
+    font-size: 16px;
+    color: #09094d;
+    margin: 30px;
+}
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="post.html">Post</a></li>
+            <li class="active"><a href="saved.html">Saved</a></li>
+            <li><a href="fave.html">Favorites</a></li>
+            <li><a href="setting.html">Settings</a></li>
+        </ul>
+    </nav>
+   <div class="main">
+        <p>No saved poems </p>
+   </div>
+</body>
+</html>
